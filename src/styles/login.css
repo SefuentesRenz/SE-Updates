@@ -1,0 +1,214 @@
+/* Container */
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+
+/* Left Side - Login */
+.login-box {
+  width: 60%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  padding: 40px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 450px;
+}
+
+.label {
+  display: block;
+  color: #333;
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  margin-top: 5px;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #2563eb;
+  box-shadow: 0px 0px 5px rgba(37, 99, 235, 0.5);
+}
+
+.login-button {
+  width: 65%;
+  background: #F9486C;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin: 20px auto 0 auto;
+  /* Centers the button */
+  cursor: pointer;
+  font-weight: bold;
+  display: block;
+  /* Ensures block-level centering */
+  text-align: center;
+  border-radius: 50px;
+}
+
+.login-button:hover {
+  background: #b51535;
+}
+
+.forgot-password {
+  text-align: center;
+  font-size: 12px;
+  color: #2563eb;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Right Side - Sign Up */
+.login-signup-box {
+  width: 45%;
+  background: linear-gradient(rgba(249, 72, 108, 0.9),
+      /* F9486C with 90% opacity */
+      rgba(249, 72, 108, 0.9)),
+    url("../assets/uic.jpg");
+  /* Background image */
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.login-signup-title {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.login-signup-text {
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.login-signup-button {
+  width: 30%;
+  background: #F9486C;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  margin-top: 15px;
+  cursor: pointer;
+  border: 2px solid white;
+  /* White border */
+  font-weight: bold;
+}
+
+.signup-logo {
+  width: 150px;
+  /* Adjust size */
+  height: auto;
+  /* Maintain aspect ratio */
+  display: block;
+  /* Ensures it's centered */
+  margin: 0 auto;
+  /* Centers it inside its container */
+}
+
+
+.signup-button:hover {
+  background: #b51535;
+  color: #fefefe;
+  border: 2px solid #ffffff;
+  /* Keeps the border on hover */
+}
+
+/* User Login Toggle Switch */
+.login-switch-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto; /* Adds space and centers it */
+  position: relative;
+  top: 10px; /* Adjust this value to move it down */
+}
+
+/* User Login Switch */
+.login-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+/* Hide Default Checkbox */
+.login-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Slider */
+.login-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+/* Slider Circle */
+.login-slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+/* When Checked, Change Color */
+.login-switch input:checked + .login-slider {
+  background-color: #f9486c;
+}
+
+/* Move Slider Right */
+.login-switch input:checked + .login-slider:before {
+  transform: translateX(26px);
+}
+
+.toggle-container + .login-box {
+  margin-top: -100px; /* Adjust as needed */
+}

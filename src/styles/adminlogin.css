@@ -1,0 +1,188 @@
+/* Container */
+.admin-login-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left Side - Admin Login Box */
+.admin-login-box {
+  width: 60%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  padding: 40px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-login-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 450px;
+}
+
+.label {
+  display: block;
+  color: #333;
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  margin-top: 5px;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #2563eb;
+  box-shadow: 0px 0px 5px rgba(37, 99, 235, 0.5);
+}
+
+.login-button {
+  width: 65%;
+  background: #F9486C;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin: 20px auto 0 auto;
+  /* Centers the button */
+  cursor: pointer;
+  font-weight: bold;
+  display: block;
+  /* Ensures block-level centering */
+  text-align: center;
+  border-radius: 50px;
+}
+
+.login-button:hover {
+  background: #b51535;
+}
+
+.forgot-password {
+  text-align: center;
+  font-size: 12px;
+  color: #2563eb;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Right Side - Admin Info Box */
+.admin-info-box {
+  width: 45%;
+  background: linear-gradient(rgba(249, 72, 108, 0.9),
+      /* F9486C with 90% opacity */
+      rgba(249, 72, 108, 0.9)),
+    url("../assets/uic.jpg");
+  /* Background image */
+
+ background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.admin-logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.admin-info-title {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.admin-info-text {
+  color: white;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Admin/User Toggle Switch */
+.admin-switch-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.admin-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+/* Hide Default Checkbox */
+.admin-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Slider */
+.admin-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+/* Slider Circle */
+.admin-slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+/* When Checked, Change Color */
+.admin-switch input:checked + .admin-slider {
+  background-color: #f9486c;
+}
+
+/* Move Slider Right */
+.admin-switch input:checked + .admin-slider:before {
+  transform: translateX(26px);
+}
+
+.admin-switch-container span{
+  color: black;
+}

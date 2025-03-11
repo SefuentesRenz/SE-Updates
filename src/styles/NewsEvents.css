@@ -1,0 +1,61 @@
+.news-events-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.latest-events, .latest-news {
+    flex: 1;
+    background-color: #ffffff;
+    border: 2px solid #F9486C;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.latest-events {
+    padding: 20px;
+}
+
+.latest-news {
+    padding: 20px;
+}
+
+h2 {
+    background-color: #F9486C;
+    color: #ffffff;
+    padding: 10px;
+    margin: 0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.event-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.event-images img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.login-btn {
+    background-color: #F9486C;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100px;
+    text-align: center;
+    opacity: 0.5; /* Matches the faded button style */
+}
+
+.login-btn:hover {
+    opacity: 1;
+}

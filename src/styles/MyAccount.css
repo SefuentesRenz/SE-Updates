@@ -1,0 +1,88 @@
+.account-container {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    font-size: 15px;
+    
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers horizontally */
+    margin-bottom: 20px; /* Add spacing below */
+    border-radius: 50%; /* Circular profile picture */
+    object-fit: cover; /* Ensures image maintains aspect ratio */
+    
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+h2 {
+    color: #F9486C;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+h1 {
+    color: #fbfbfb;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+div.details-section {
+    background-color: #FFC0CB;
+    padding: 1rem;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+textarea {
+    resize: none;
+}
+
+.button-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.modify-btn, .signout-btn {
+    background-color: #FF1493;
+    color: #fff;
+    border: none;
+    border-radius: 20px;    
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+}
+
+.signout-btn {
+    background-color: #8B008B;
+}
